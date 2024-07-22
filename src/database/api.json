@@ -1,0 +1,317 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "OBBattle",
+            "userImg": "place holder",
+            "levelId": 1,
+            "email": "bigdawg@website.com"
+        },
+        {
+            "id": 2,
+            "username": "Slammin_Sammy",
+            "userImg": "place holder",
+            "levelId": 1,
+            "email": "jamminjackson@website.com"
+        },
+        {
+            "id": 3,
+            "username": "Big_Shaq",
+            "userImg": "place holder",
+            "levelId": 1,
+            "email": "magiclake@website.com"
+        },
+        {
+            "id": 4,
+            "username": "xX_Jelly_Master_Xx",
+            "userImg": "place holder",
+            "levelId": 1,
+            "email": "spongeboy@website.com"
+        },
+        {
+            "id": 5,
+            "username": "demon_child",
+            "userImg": "place holder",
+            "levelId": 1,
+            "email": "oharagurl@website.com"
+        }
+
+    ],
+
+    "storx": [
+        {
+            "id": 1,
+            "image": "place holder",
+            "typeId": 1,
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "image": "place holder",
+            "typeId": 2,
+            "userId": 1
+        },
+        {
+            "id": 3,
+            "image": "place holder",
+            "typeId": 3,
+            "userId": 1
+        },
+        {
+            "id": 4,
+            "image": "place holder",
+            "typeId": 4,
+            "userId": 1
+        },
+        {
+            "id": 5,
+            "image": "src/images/wanoFaceRobin.jpg",
+            "typeId": 4,
+            "userId": 5
+        },
+        {
+            "id": 6,
+            "image": "src/images/blackSnakeMoanSam.webp",
+            "typeId": 2,
+            "userId": 2
+        },
+        {
+            "id": 7,
+            "image": "src/images/gourmetShitgif.gif",
+            "typeId": 3,
+            "userId": 2
+        },
+        {
+            "id": 8,
+            "image": "src/images/julesGun.webp",
+            "typeId": 12,
+            "userId": 2
+        },
+        {
+            "id": 9,
+            "image": "src/images/samPalm.jpg",
+            "typeId": 6,
+            "userId": 2
+        },
+        {
+            "id": 10,
+            "image": "src/images/samSnake.jpg",
+            "typeId": 13,
+            "userId": 2
+        },
+        {
+            "id": 11,
+            "image": "src/images/professorShaq.jpg",
+            "typeId": 9,
+            "userId": 3
+        },
+        {
+            "id": 12,
+            "image": "src/images/shaqFingerGun.jpg",
+            "typeId": 1,
+            "userId": 3
+        },
+        {
+            "id": 13,
+            "image": "src/images/shaqShimmy.jpg",
+            "typeId": 10,
+            "userId": 3
+        },
+        {
+            "id": 14,
+            "image": "src/images/shaqShock.jpg",
+            "typeId": 7,
+            "userId": 3
+        },
+        {
+            "id": 15,
+            "image": "src/images/shaqWings.jpg",
+            "typeId": 3,
+            "userId": 3
+        },
+        {
+            "id": 16,
+            "image": "src/images/crucifixSponge.jpg",
+            "typeId": 2,
+            "userId": 4
+        },
+        {
+            "id": 17,
+            "image": "src/images/sadSponge.jpg",
+            "typeId": 11,
+            "userId": 4
+        },
+        {
+            "id": 18,
+            "image": "src/images/sideEyeSponge.jpg",
+            "typeId": 2,
+            "userId": 4
+        },
+        {
+            "id": 19,
+            "image": "src/images/spongeToldYouSo.jpg",
+            "typeId": 5,
+            "userId": 4
+        },
+        {
+            "id": 20,
+            "image": "src/images/thirstySponge.jpg",
+            "typeId": 7,
+            "userId": 4
+        },
+        {
+            "id": 21,
+            "image": "src/images/amusedRobin.jpg",
+            "typeId": 8,
+            "userId": 5
+        },
+        {
+            "id": 22,
+            "image": "src/images/robinShades.jpg",
+            "typeId": 9,
+            "userId": 5
+        },
+        {
+            "id": 23,
+            "image": "src/images/robinSips.jpg",
+            "typeId": 2,
+            "userId": 5
+        },
+        {
+            "id": 24,
+            "image": "src/images/robinSmile.webp",
+            "typeId": 6,
+            "userId": 5
+        }
+
+    ],
+
+    "types": [
+        {
+            "id": 1,
+            "name": "approval"
+        },
+        {
+            "id": 2,
+            "name": "disapproval"
+        },
+        {
+            "id": 3,
+            "name": "delicious"
+        },
+        {
+            "id": 4,
+            "name": "gross"
+        },
+        {
+            "id": 5,
+            "name": "funny"
+        },
+        {
+            "id": 6,
+            "name": "boring"
+        },
+        {
+            "id": 7,
+            "name": "exciting"
+        },
+        {
+            "id": 8,
+            "name": "sexy"
+        },
+        {
+            "id": 9,
+            "name": "confident"
+        },
+        {
+            "id": 10,
+            "name": "happy"
+        },
+        {
+            "id": 11,
+            "name": "sad"
+        },
+        {
+            "id": 12,
+            "name": "angry"
+        },
+        {
+            "id": 13,
+            "name": "caring"
+        }
+    ],
+
+    "responses": [
+
+    ],
+
+    "levels": [
+        {
+            "id": 1,
+            "name": "intern",
+            "maxStorx": 5,
+            "responsesReceivedRequirement": 5
+        },
+        {
+            "id": 2,
+            "name": "junior trader",
+            "maxStorx": 7,
+            "responsesReceivedRequirement": 12
+        },
+        {
+            "id": 3,
+            "name": "analyst",
+            "maxStorx": 10,
+            "responsesReceivedRequirement": 25
+        },
+        {
+            "id": 4,
+            "name": "broker",
+            "maxStorx": 14,
+            "responsesReceivedRequirement": 60
+        },
+        {
+            "id": 5,
+            "name": "senior broker",
+            "maxStorx": 18,
+            "responsesReceivedRequirement": 135
+        },
+        {
+            "id": 6,
+            "name": "portfolio manager",
+            "maxStorx": 22,
+            "responsesReceivedRequirement": 310
+        },
+        {
+            "id": 7,
+            "name": "investment strategist",
+            "maxStorx": 26,
+            "responsesReceivedRequirement": 775
+        },
+        {
+            "id": 8,
+            "name": "chief investment officer",
+            "maxStorx": 30,
+            "responsesReceivedRequirement": 1950
+        },
+        {
+            "id": 9,
+            "name": "meme mogul",
+            "maxStorx": 35,
+            "responsesReceivedRequirement": 4875
+        },
+        {
+            "id": 10,
+            "name": "meme lord",
+            "maxStorx": 40,
+            "responsesReceivedRequirement": 12000
+        }
+    ]
+
+
+
+
+
+
+
+}
