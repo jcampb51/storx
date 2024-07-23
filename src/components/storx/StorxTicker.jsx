@@ -1,5 +1,46 @@
 //fetch the storx list
 
+import { useEffect } from "react"
+import { getAllStorx } from "../../services/storxService"
+import { useState } from "react"
+
+
+export const StorxTicker = () => {
+
+    const [allStorx, setAllStorx] = useState([])
+
+    const getAndSetAllStorx = () => {
+        getAllStorx().then((storxArray) => {
+            setAllStorx(storxArray)
+        })
+    }
+
+    useEffect(() => {
+        getAndSetAllStorx()
+    }, [])
+
+    return (
+        <div className="storx-container">
+            <h2>Storx Ticker</h2>
+        
+        <article className="storx">
+            {allStorx.map((storxObj) => {
+                 console.log(storxObj.image);
+                return (
+                    <section key={storxObj.id}>
+                        <img className="storx-img" src={storxObj.image} alt="Storx Image" />
+                        <footer>
+                            <div className="storx-info">Responses: # - Response Types</div>
+                            <div className="button-container">Button Placeholder</div>
+                        </footer>
+                    </section>
+                )
+            })}
+        </article>
+        </div>
+    )
+
+}
 //useState to set the list
 //useEffect hook to call the render
 
