@@ -1,4 +1,7 @@
+import { StorxTicker } from "./components/storx/StorxTicker"
 
 export const App = () => {
-  return <div>Hello World!</div>
+  return (
+    <StorxTicker />
+  )
 }

@@ -39,152 +39,151 @@
     ],
 
     "storx": [
-        {
-            "id": 1,
-            "image": "place holder",
-            "typeId": 1,
-            "userId": 1
-        },
-        {
-            "id": 2,
-            "image": "place holder",
-            "typeId": 2,
-            "userId": 1
-        },
-        {
-            "id": 3,
-            "image": "place holder",
-            "typeId": 3,
-            "userId": 1
-        },
-        {
-            "id": 4,
-            "image": "place holder",
-            "typeId": 4,
-            "userId": 1
-        },
-        {
-            "id": 5,
-            "image": "src/images/wanoFaceRobin.jpg",
-            "typeId": 4,
-            "userId": 5
-        },
-        {
-            "id": 6,
-            "image": "src/images/blackSnakeMoanSam.webp",
-            "typeId": 2,
-            "userId": 2
-        },
-        {
-            "id": 7,
-            "image": "src/images/gourmetShitgif.gif",
-            "typeId": 3,
-            "userId": 2
-        },
-        {
-            "id": 8,
-            "image": "src/images/julesGun.webp",
-            "typeId": 12,
-            "userId": 2
-        },
-        {
-            "id": 9,
-            "image": "src/images/samPalm.jpg",
-            "typeId": 6,
-            "userId": 2
-        },
-        {
-            "id": 10,
-            "image": "src/images/samSnake.jpg",
-            "typeId": 13,
-            "userId": 2
-        },
-        {
-            "id": 11,
-            "image": "src/images/professorShaq.jpg",
-            "typeId": 9,
-            "userId": 3
-        },
-        {
-            "id": 12,
-            "image": "src/images/shaqFingerGun.jpg",
-            "typeId": 1,
-            "userId": 3
-        },
-        {
-            "id": 13,
-            "image": "src/images/shaqShimmy.jpg",
-            "typeId": 10,
-            "userId": 3
-        },
-        {
-            "id": 14,
-            "image": "src/images/shaqShock.jpg",
-            "typeId": 7,
-            "userId": 3
-        },
-        {
-            "id": 15,
-            "image": "src/images/shaqWings.jpg",
-            "typeId": 3,
-            "userId": 3
-        },
-        {
-            "id": 16,
-            "image": "src/images/crucifixSponge.jpg",
-            "typeId": 2,
-            "userId": 4
-        },
-        {
-            "id": 17,
-            "image": "src/images/sadSponge.jpg",
-            "typeId": 11,
-            "userId": 4
-        },
-        {
-            "id": 18,
-            "image": "src/images/sideEyeSponge.jpg",
-            "typeId": 2,
-            "userId": 4
-        },
-        {
-            "id": 19,
-            "image": "src/images/spongeToldYouSo.jpg",
-            "typeId": 5,
-            "userId": 4
-        },
-        {
-            "id": 20,
-            "image": "src/images/thirstySponge.jpg",
-            "typeId": 7,
-            "userId": 4
-        },
-        {
-            "id": 21,
-            "image": "src/images/amusedRobin.jpg",
-            "typeId": 8,
-            "userId": 5
-        },
-        {
-            "id": 22,
-            "image": "src/images/robinShades.jpg",
-            "typeId": 9,
-            "userId": 5
-        },
-        {
-            "id": 23,
-            "image": "src/images/robinSips.jpg",
-            "typeId": 2,
-            "userId": 5
-        },
-        {
-            "id": 24,
-            "image": "src/images/robinSmile.webp",
-            "typeId": 6,
-            "userId": 5
-        }
-
-    ],
+    {
+        "id": 1,
+        "image": "https://via.placeholder.com/150",
+        "typeId": 1,
+        "userId": 1
+    },
+    {
+        "id": 2,
+        "image": "https://via.placeholder.com/150",
+        "typeId": 2,
+        "userId": 1
+    },
+    {
+        "id": 3,
+        "image": "https://via.placeholder.com/150",
+        "typeId": 3,
+        "userId": 1
+    },
+    {
+        "id": 4,
+        "image": "https://via.placeholder.com/150",
+        "typeId": 4,
+        "userId": 1
+    },
+    {
+        "id": 5,
+        "image": "src/images/storxImgs/wanoFaceRobin.jpg",
+        "typeId": 4,
+        "userId": 5
+    },
+    {
+        "id": 6,
+        "image": "src/images/storxImgs/blackSnakeMoanSam.webp",
+        "typeId": 2,
+        "userId": 2
+    },
+    {
+        "id": 7,
+        "image": "src/images/storximgs/gourmetShitgif.gif",
+        "typeId": 3,
+        "userId": 2
+    },
+    {
+        "id": 8,
+        "image": "src/images/storxImgs/gourmetShitgif.gif",
+        "typeId": 12,
+        "userId": 2
+    },
+    {
+        "id": 9,
+        "image": "src/images/storxImgs/samPalm.jpg",
+        "typeId": 6,
+        "userId": 2
+    },
+    {
+        "id": 10,
+        "image": "src/images/storxImgs/samSnake.jpg",
+        "typeId": 13,
+        "userId": 2
+    },
+    {
+        "id": 11,
+        "image": "src/images/storxImgs/professorShaq.jpg",
+        "typeId": 9,
+        "userId": 3
+    },
+    {
+        "id": 12,
+        "image": "src/images/storxImgs/shaqFingerGun.jpg",
+        "typeId": 1,
+        "userId": 3
+    },
+    {
+        "id": 13,
+        "image": "src/images/storxImgs/shaqShimmy.jpg",
+        "typeId": 10,
+        "userId": 3
+    },
+    {
+        "id": 14,
+        "image": "src/images/storxImgs/shaqShock.jpg",
+        "typeId": 7,
+        "userId": 3
+    },
+    {
+        "id": 15,
+        "image": "src/images/storxImgs/shaqWings.jpg",
+        "typeId": 3,
+        "userId": 3
+    },
+    {
+        "id": 16,
+        "image": "src/images/storxImgs/crucifixSponge.jpg",
+        "typeId": 2,
+        "userId": 4
+    },
+    {
+        "id": 17,
+        "image": "src/images/storxImgs/sadSponge.jpg",
+        "typeId": 11,
+        "userId": 4
+    },
+    {
+        "id": 18,
+        "image": "src/images/storxImgs/sideEyeSponge.jpg",
+        "typeId": 2,
+        "userId": 4
+    },
+    {
+        "id": 19,
+        "image": "src/images/storxImgs/spongeToldYouSo.jpg",
+        "typeId": 5,
+        "userId": 4
+    },
+    {
+        "id": 20,
+        "image": "src/images/storxImgs/thirstySponge.jpg",
+        "typeId": 7,
+        "userId": 4
+    },
+    {
+        "id": 21,
+        "image": "src/images/storxImgs/amusedRobin.jpg",
+        "typeId": 8,
+        "userId": 5
+    },
+    {
+        "id": 22,
+        "image": "src/images/storxImgs/robinShades.jpg",
+        "typeId": 9,
+        "userId": 5
+    },
+    {
+        "id": 23,
+        "image": "src/images/storxImgs/robinSips.jpg",
+        "typeId": 2,
+        "userId": 5
+    },
+    {
+        "id": 24,
+        "image": "src/images/storxImgs/robinSmile.webp",
+        "typeId": 6,
+        "userId": 5
+    }
+],
 
     "types": [
         {
