@@ -1,0 +1,1 @@
+//create and export a render function and define the links for the Navbar. Make sure useNavigate hook is correctly imported and define it as a variable to use it properly
