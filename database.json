@@ -39,7 +39,7 @@
   "storx": [
     {
       "id": 1,
-      "image": "src/images/storxImgs/amusedRobin.jpg",
+      "image": "src/images/storxImgs/julesGun.webp",
       "typeId": 8,
       "userId": 1
     },
@@ -180,6 +180,18 @@
       "image": "src/images/storxImgs/robinSmile.webp",
       "typeId": 6,
       "userId": 5
+    },
+    {
+      "image": "src/images/storxImgs/julesGun.webp",
+      "typeId": 2,
+      "userId": 1,
+      "id": 25
+    },
+    {
+      "image": "src/images/storxImgs/thirstySponge.jpg",
+      "typeId": 7,
+      "userId": 1,
+      "id": 26
     }
   ],
   "types": [

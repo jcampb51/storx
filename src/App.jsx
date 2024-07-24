@@ -3,6 +3,7 @@ import { EditStorx } from "./components/storx/EditStorx";
 import { StorxTicker } from "./components/storx/StorxTicker";
 import { getAllStorx } from "./services/storxService"; // Adjust the import path as necessary
 import { getAllTypes } from "./services/typeService";
+import { CreateStorx } from "./components/storx/CreateStorx";
 
 export const App = () => {
   const [allStorx, setAllStorx] = useState([]);
@@ -30,6 +31,7 @@ export const App = () => {
 
   return (
     <div>
+      <CreateStorx allTypes={allTypes} />
       <EditStorx allStorx={allStorx} allTypes={allTypes} />
       <StorxTicker allStorx={allStorx} />
     </div>

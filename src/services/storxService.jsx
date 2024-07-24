@@ -11,3 +11,13 @@ export const updateStorx = (id, updatedData) => {
       body: JSON.stringify(updatedData)
     }).then(response => response.json());
   }
+
+  export const createStorx = (newStorxData) => {
+    return fetch(`http://127.0.0.1:8088/storx`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newStorxData)
+    }).then(response => response.json());
+  }
