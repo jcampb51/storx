@@ -38,21 +38,9 @@
   ],
   "storx": [
     {
-      "id": 1,
-      "image": "src/images/storxImgs/julesGun.webp",
-      "typeId": 8,
-      "userId": 1
-    },
-    {
       "id": 2,
-      "image": "https://via.placeholder.com/150",
+      "image": "src/images/storxImgs/samPalm.jpg",
       "typeId": 2,
-      "userId": 1
-    },
-    {
-      "id": 3,
-      "image": "https://via.placeholder.com/150",
-      "typeId": 3,
       "userId": 1
     },
     {
@@ -192,6 +180,12 @@
       "typeId": 7,
       "userId": 1,
       "id": 26
+    },
+    {
+      "image": "src/images/storxImgs/crucifixSponge.jpg",
+      "typeId": 2,
+      "userId": 1,
+      "id": 27
     }
   ],
   "types": [
