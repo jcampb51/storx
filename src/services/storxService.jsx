@@ -21,3 +21,16 @@ export const updateStorx = (id, updatedData) => {
       body: JSON.stringify(newStorxData)
     }).then(response => response.json());
   }
+
+  export const deleteStorx = (storxId) => {
+    return fetch(`http://127.0.0.1:8088/storx/${storxId}`, {
+      method: "DELETE"
+    }).then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to delete storx');
+      }
+      return response.json();  // Only if your server responds with JSON
+    });
+  };
+  
+  

@@ -3,19 +3,13 @@
 import { useEffect, useState } from "react";
 import { updateStorx } from "../../services/storxService";
 
-export const EditStorx = ({ allStorx, allTypes }) => {
-  const [targetId, setTargetId] = useState(1);
+export const EditStorx = ({ allStorx, allTypes, targetId }) => {
+  
   const [editTarget, setEditTarget] = useState({});
 
   useEffect(() => {
-    setTargetId(1);
-    console.log('Target ID set to:', 1);
-  }, []);
-
-  useEffect(() => {
     const target = allStorx.find(storx => storx.id === targetId);
-    setEditTarget(target);
-    console.log('Edit target:', target);
+    setEditTarget(target || {});
   }, [targetId, allStorx]);
 
   const handleInputChange = (e) => {
@@ -24,7 +18,7 @@ export const EditStorx = ({ allStorx, allTypes }) => {
   };
 
   const handleTypeChange = (e) => {
-    const typeId = parseInt(e.target.value);
+    const typeId = parseInt(e.target.value, 10);
     const typeName = allTypes.find(type => type.id == typeId).name;
     setEditTarget(prevState => ({ ...prevState, typeId: typeId, typeName: typeName }));
   }

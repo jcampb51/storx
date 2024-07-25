@@ -1,25 +1,22 @@
+import React from 'react';
+import { DeleteStorx } from './DeleteStorx';
+
 //fetch the storx list
 
-export const StorxTicker = ({ allStorx }) => {
-    return (
-      <div className="storx-container">
-        <h2>Storx Ticker</h2>
-        <article className="storx">
-          {allStorx.map((storxObj) => {
-            return (
-              <section key={storxObj.id}>
-                <img className="storx-img" src={storxObj.image} alt="Storx Image" />
-                <footer>
-                  <div className="storx-info">Responses: # - Response Types</div>
-                  <div className="button-container">Button Placeholder</div>
-                </footer>
-              </section>
-            );
-          })}
-        </article>
-      </div>
-    );
-  };
+export const StorxTicker = ({ allStorx, onDelete, onEditClick }) => {
+  return (
+    <div className="storx-list">
+      {allStorx.map(storxObj => (
+        <div key={storxObj.id} className="storx-item">
+          <img src={storxObj.image} alt="Storx Image" />
+          <p>Type: {storxObj.typeName}</p>
+          <button onClick={() => onEditClick(storxObj.id)}>Edit</button>
+          <DeleteStorx allStorx={allStorx} storxObj={storxObj} onDelete={onDelete} />
+        </div>
+      ))}
+    </div>
+  );
+}
   
 
 
