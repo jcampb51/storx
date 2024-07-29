@@ -2,19 +2,29 @@
 //passed prop for current user
 import { useEffect, useState } from "react";
 import { createStorx } from "../../services/storxService";
+import { getAllTypes } from "../../services/typeService";
+import "./Storx.css"
 
-export const CreateStorx = ({ allTypes }) => {
-
-  const currentUserId = 1
-
-    const [userId, setUserId] = useState({})
-    const [newStorx, setNewStorx] = useState({
-    image: '',
-    typeId: allTypes[0]?.id || '',
-    userId: currentUserId
+export const CreateStorx = ({ currentUser }) => {
+  const [allTypes, setAllTypes] = useState([]);
+  const [newStorx, setNewStorx] = useState({
+      image: '',
+      typeId: '',
+      userId: currentUser ? currentUser.id : ''
   });
 
-  
+  // Fetch all types on component mount
+  useEffect(() => {
+      getAllTypes().then(typeArray => {
+          setAllTypes(typeArray);
+          // Set initial typeId to the first type available
+          setNewStorx(prev => ({
+              ...prev,
+              typeId: typeArray[0]?.id || '',
+              userId: currentUser ? currentUser.id : ''
+          }));
+      });
+  }, [currentUser]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

@@ -1,0 +1,24 @@
+/* Welcome.css */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.welcome-container h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.welcome-container h1 span {
+    display: block;
+}
+
+.welcome-container div {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #666;
+}

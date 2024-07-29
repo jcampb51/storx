@@ -2,26 +2,23 @@
 //Make sure useNavigate hook is correctly imported and define it as a variable to use it properly
 
 import { Link, useNavigate } from "react-router-dom"
-import "./NavBar.css"
+import "./navbar.css"
 
-export const Navebar = () => {
+export const Navbar = () => {
     const navigate = useNavigate
     return (
     <ul className="navbar">
         <li className="navbar-item">
-            <Link to="/ticker">Storx Ticker</Link>
+            <Link to="/storx">Storx Ticker</Link>
         </li>
         <li className="navbar-item">
             <Link to="/user_profile">My Profile</Link>
         </li>
         <li className="navbar-item">
-            <Link to="/users">Users</Link>
-        </li>
-        <li className="navbar-item">
             <Link to="/create">Create Storx</Link>
         </li>
     
-    {localStorage.getItem("honey_user") ? (
+    {localStorage.getItem("storx_user") ? (
         <li className="navbar-item navbar-logout">
           <Link
             className="navbar-link"
@@ -38,3 +35,9 @@ export const Navebar = () => {
         ""
       )}</ul>
 )}
+
+{/* //
+        
+ //       </li>
+//<li className="navbar-item">
+  //          <Link to="/users">Users</Link> */}

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-import "./Login.css"
+import "./login.css"
 import { getUserByEmail } from "../../services/userService"
 
 
@@ -16,10 +16,10 @@ export const Login = () => {
       if (foundUsers.length === 1) {
         const user = foundUsers[0]
         localStorage.setItem(
-          "honey_user",
+          "storx_user",
           JSON.stringify({
             id: user.id,
-            isStaff: user.isStaff,
+            
           })
         )
 

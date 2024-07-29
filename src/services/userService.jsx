@@ -1,5 +1,5 @@
 export const getAllUsers = () => {
-    return fetch(`http://127.0.0.1:8088/users`).then((res) => res.json())
+    return fetch(`http://127.0.0.1:8088/users?_expand=level`).then((res) => res.json())
 }
 
 export const getUserByEmail = (email) => {

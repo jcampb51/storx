@@ -1,12 +1,11 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import "./Login.css"
+import "./register.css"
 import { createUser, getUserByEmail } from "../../services/userService"
 
 
 export const Register = (props) => {
   const [customer, setCustomer] = useState({
-    fullName: "",
     userImg: "place holder",
     levelId: 1,
     email: "",
