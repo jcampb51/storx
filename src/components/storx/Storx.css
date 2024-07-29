@@ -1,0 +1,75 @@
+/* StorxTicker.css */
+.storx-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.storx-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.storx-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Image height within the item */
+}
+
+.storx-item p {
+    margin: 10px 0;
+}
+
+/* EditStorx.css */
+.storx-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.storx-edit-target {
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.storx-edit-target img {
+    width: 100%;
+    height: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label,
+.form-group input,
+.form-group select {
+    width: 100%;
+}
+
+/* CreateStorx.css */
+.storx-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.storx-create-target {
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.storx-create-target img {
+    width: 100%;
+    height: auto;
+}

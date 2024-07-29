@@ -34,19 +34,35 @@
       "userImg": "place holder",
       "levelId": 1,
       "email": "oharagurl@website.com"
+    },
+    {
+      "fullName": "",
+      "userImg": "place holder",
+      "levelId": 1,
+      "email": "alwayshuffer@website.com",
+      "username": "huffer",
+      "id": 6
+    },
+    {
+      "userImg": "place holder",
+      "levelId": 1,
+      "email": "wheresolgra@website.com",
+      "username": "Mankrik",
+      "id": 7
+    },
+    {
+      "userImg": "place holder",
+      "levelId": 1,
+      "email": "nevereverhuffer@website.com",
+      "username": "neverhuffer",
+      "id": 8
     }
   ],
   "storx": [
     {
       "id": 2,
-      "image": "src/images/storxImgs/samPalm.jpg",
-      "typeId": 2,
-      "userId": 1
-    },
-    {
-      "id": 4,
-      "image": "https://via.placeholder.com/150",
-      "typeId": 4,
+      "image": "src/images/storxImgs/julesGun.webp",
+      "typeId": 5,
       "userId": 1
     },
     {
@@ -186,6 +202,12 @@
       "typeId": 2,
       "userId": 1,
       "id": 27
+    },
+    {
+      "image": "src/images/storxImgs/sideEyeSponge.jpg",
+      "typeId": 7,
+      "userId": 1,
+      "id": 29
     }
   ],
   "types": [

@@ -1,0 +1,22 @@
+/* navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-item {
+    list-style: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navbar-logout .navbar-link {
+    color: #dc3545; /* Bootstrap danger color for contrast */
+}

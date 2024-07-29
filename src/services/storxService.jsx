@@ -2,15 +2,24 @@ export const getAllStorx = () => {
     return fetch(`http://127.0.0.1:8088/storx?_expand=type&_expand=user`).then((res) => res.json())
 }
 
+export const getStorxById = () => {
+  return fetch(`http://127.0.0.1:8088/storx?_expand=type&_expand=user/${id}`).then((res) => res.json())
+}
+
 export const updateStorx = (id, updatedData) => {
-    return fetch(`http://127.0.0.1:8088/storx/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(updatedData)
-    }).then(response => response.json());
-  }
+  return fetch(`http://127.0.0.1:8088/storx/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(updatedData)
+  }).then(response => {
+    if (!response.ok) {
+      throw new Error(`Failed to update Storx with ID ${id}`);
+    }
+    return response.json();
+  });
+};
 
   export const createStorx = (newStorxData) => {
     return fetch(`http://127.0.0.1:8088/storx`, {

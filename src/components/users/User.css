@@ -1,0 +1,32 @@
+/* UserProfile.css */
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.user-picture img {
+    width: auto;
+    height: 450px; /* Maximum size as requested */
+    max-width: 450px; /* Ensures the image is not bigger than 450x450 */
+    border-radius: 50%; /* Circular image */
+}
+
+.stat-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.stat-block h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stat-block p {
+    margin: 5px 0;
+    color: #555;
+}
