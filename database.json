@@ -3,35 +3,35 @@
     {
       "id": 1,
       "username": "OBBattle",
-      "userImg": "place holder",
+      "userImg": "src/images/userImages/me.jpg",
       "levelId": 1,
       "email": "bigdawg@website.com"
     },
     {
       "id": 2,
       "username": "Slammin_Sammy",
-      "userImg": "place holder",
+      "userImg": "src/images/userImages/samJackson.jpg",
       "levelId": 1,
       "email": "jamminjackson@website.com"
     },
     {
       "id": 3,
       "username": "Big_Shaq",
-      "userImg": "place holder",
+      "userImg": "src/images/userImages/shaq.jpg",
       "levelId": 1,
       "email": "magiclake@website.com"
     },
     {
       "id": 4,
       "username": "xX_Jelly_Master_Xx",
-      "userImg": "place holder",
+      "userImg": "src/images/userImages/sbsp.jpg",
       "levelId": 1,
       "email": "spongeboy@website.com"
     },
     {
       "id": 5,
       "username": "demon_child",
-      "userImg": "place holder",
+      "userImg": "src/images/userImages/robin.jpg",
       "levelId": 1,
       "email": "oharagurl@website.com"
     },

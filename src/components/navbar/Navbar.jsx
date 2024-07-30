@@ -4,7 +4,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./navbar.css"
 
-export const Navbar = () => {
+export const Navbar = ({ currentUser }) => {
     const navigate = useNavigate
     return (
     <ul className="navbar">
@@ -12,7 +12,10 @@ export const Navbar = () => {
             <Link to="/storx">Storx Ticker</Link>
         </li>
         <li className="navbar-item">
-            <Link to="/user_profile">My Profile</Link>
+            <Link to={`/user_profile/${currentUser.id}`}>My Profile</Link>
+        </li>
+        <li className="navbar-item">
+            <Link to="/user_list">User List</Link>
         </li>
         <li className="navbar-item">
             <Link to="/create">Create Storx</Link>

@@ -1,16 +1,19 @@
 /* UserProfile.css */
 .user-profile {
+    flex: 0 1 300px; /* Do not grow, but can shrink, base width 300px */
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
 .user-picture img {
-    width: auto;
-    height: 450px; /* Maximum size as requested */
-    max-width: 450px; /* Ensures the image is not bigger than 450x450 */
-    border-radius: 50%; /* Circular image */
+    width: 100%; /* Make image fill the container */
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
 }
 
 .stat-block {
@@ -29,4 +32,22 @@
 .stat-block p {
     margin: 5px 0;
     color: #555;
+}
+
+.user-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
