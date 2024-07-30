@@ -62,7 +62,7 @@
     {
       "id": 2,
       "image": "src/images/storxImgs/julesGun.webp",
-      "typeId": 5,
+      "typeId": 2,
       "userId": 1
     },
     {
@@ -202,12 +202,6 @@
       "typeId": 2,
       "userId": 1,
       "id": 27
-    },
-    {
-      "image": "src/images/storxImgs/sideEyeSponge.jpg",
-      "typeId": 7,
-      "userId": 1,
-      "id": 29
     }
   ],
   "types": [

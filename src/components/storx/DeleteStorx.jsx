@@ -1,24 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { deleteStorx } from "../../services/storxService"; // Ensure you have this function in your service
+import { useNavigate } from "react-router-dom";
 
 
-export const DeleteStorx = ({ allStorx, storxObj }) => {
+
+export const DeleteStorx = ({ storxObj, onDelete }) => {
     const [confirmDelete, setConfirmDelete] = useState(false);
+    const navigate = useNavigate
 
-    const onDelete = (deletedId) => {
-      setAllStorx(prevStorx => prevStorx.filter(storx => storx.id !== deletedId));
-      setAllStorx(prevStorx => prevStorx.filter(storx => storx?.id !== deletedId));
-    };
+    
   
   
     const handleDelete = () => {
         deleteStorx(storxObj.id).then(() => {
           console.log('Storx deleted:', storxObj.id);
           onDelete(storxObj.id); // Update UI accordingly
+          // navigate(`/storx`)
         }).catch(error => {
           console.error('Error deleting storx:', error.message);
         });
       };
+
 
     return (
       <div className="delete-storx">
