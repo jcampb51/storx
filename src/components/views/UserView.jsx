@@ -8,6 +8,7 @@ import { CreateStorx } from "../storx/CreateStorx"
 import { EditStorx } from "../storx/EditStorx"
 import { Welcome } from "../welcome/Welcome"
 import { UserList } from "../users/UserList"
+import { EditProfile } from "../users/EditProfile"
 
 
 export const UserViews = ({ currentUser }) => {
@@ -19,7 +20,7 @@ export const UserViews = ({ currentUser }) => {
     
       <Route path="user_profile/:id" element={<UserProfile currentUser={currentUser} />} />
       <Route path="user_list" element={<UserList currentUser={currentUser} />} />
-    
+      <Route path="edit_profile" element={<EditProfile currentUser={currentUser} />} />
     <Route path="storx">
       <Route index element={<StorxTicker currentUser={currentUser}/>} />
       <Route path=":storxId" element={<StorxDetails />} />{""}
