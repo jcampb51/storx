@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 export const DeleteStorx = ({ storxObj, onDelete }) => {
     const [confirmDelete, setConfirmDelete] = useState(false);
-    const navigate = useNavigate
+    
 
     
   
@@ -15,7 +15,6 @@ export const DeleteStorx = ({ storxObj, onDelete }) => {
         deleteStorx(storxObj.id).then(() => {
           console.log('Storx deleted:', storxObj.id);
           onDelete(storxObj.id); // Update UI accordingly
-          // navigate(`/storx`)
         }).catch(error => {
           console.error('Error deleting storx:', error.message);
         });

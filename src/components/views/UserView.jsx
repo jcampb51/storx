@@ -7,15 +7,19 @@ import { StorxDetails } from "../storx/StorxDetails"
 import { CreateStorx } from "../storx/CreateStorx"
 import { EditStorx } from "../storx/EditStorx"
 import { Welcome } from "../welcome/Welcome"
+import { UserList } from "../users/UserList"
 
 
 export const UserViews = ({ currentUser }) => {
    return( <Routes>
 
 
-<Route path="/" element={<><Navbar /><Outlet /></>}>
+<Route path="/" element={<><Navbar currentUser={currentUser}/><Outlet /></>}>
     <Route index element={<Welcome />} />
-    <Route path="user_profile" element={<UserProfile currentUser={currentUser} />} />
+    
+      <Route path="user_profile/:id" element={<UserProfile currentUser={currentUser} />} />
+      <Route path="user_list" element={<UserList currentUser={currentUser} />} />
+    
     <Route path="storx">
       <Route index element={<StorxTicker currentUser={currentUser}/>} />
       <Route path=":storxId" element={<StorxDetails />} />{""}
