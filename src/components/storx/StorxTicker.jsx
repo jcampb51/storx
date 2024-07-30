@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const StorxTicker = ({ currentUser }) => {
   const [allStorx, setAllStorx] = useState([]);
-  const [editthing, setEditthing] = useState({})
+  const [editThing, setEditThing] = useState({})
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -19,16 +19,20 @@ export const StorxTicker = ({ currentUser }) => {
   
 const handleEditClick = (storxThing) => {
   console.log(`navigating to edit storx with with ${storxThing.id}`)
-  setEditthing(storxThing)
+  setEditThing(storxThing)
 }
+
+const onDelete = (deletedId) => {
+  setAllStorx(prevStorx => prevStorx.filter(storx => storx?.id !== deletedId));
+};
 
  // useEffect to navigate after the state is updated
  useEffect(() => {
-  if (editthing.id) { // Ensure we have a valid ID
-    navigate(`/edit/${editthing.id}`);
-    console.log("Edit thing in useEffect:", editthing);
+  if (editThing.id) { // Ensure we have a valid ID
+    navigate(`/edit/${editThing.id}`);
+    console.log("Edittthing in useEffect:", editThing);
   }
-}, [editthing, navigate]);
+}, [editThing, navigate]);
 
   return (
     <div className="storx-list">
@@ -39,7 +43,7 @@ const handleEditClick = (storxThing) => {
           {currentUser.id === storxObj.userId && (
             <>
               <button onClick={() =>  handleEditClick(storxObj) }>Edit</button>
-              <DeleteStorx storxObj={storxObj} />
+              <DeleteStorx storxObj={storxObj} onDelete={onDelete}/>
             </>
           )}
         </div>

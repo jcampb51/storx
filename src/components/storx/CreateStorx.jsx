@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { createStorx } from "../../services/storxService";
 import { getAllTypes } from "../../services/typeService";
 import "./Storx.css"
+import { useNavigate } from "react-router-dom";
 
 export const CreateStorx = ({ currentUser }) => {
   const [allTypes, setAllTypes] = useState([]);
@@ -12,6 +13,7 @@ export const CreateStorx = ({ currentUser }) => {
       typeId: '',
       userId: currentUser ? currentUser.id : ''
   });
+  const navigate = useNavigate()
 
   // Fetch all types on component mount
   useEffect(() => {
@@ -38,10 +40,13 @@ export const CreateStorx = ({ currentUser }) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    
     createStorx(newStorx).then((createdStorx) => {
       console.log('Storx created:', createdStorx);
+      navigate(`/storx`)
       // Optionally, you can reset the form or perform other actions
     });
+    
   };
 
 
