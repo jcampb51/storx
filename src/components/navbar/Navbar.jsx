@@ -20,6 +20,9 @@ export const Navbar = ({ currentUser }) => {
         <li className="navbar-item">
             <Link to="/create">Create Storx</Link>
         </li>
+        <li className="navbar-item">
+            <Link to="/respond">Respond</Link>
+        </li>
     
     {localStorage.getItem("storx_user") ? (
         <li className="navbar-item navbar-logout">

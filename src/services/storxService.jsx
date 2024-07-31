@@ -2,8 +2,8 @@ export const getAllStorx = () => {
     return fetch(`http://127.0.0.1:8088/storx?_expand=type&_expand=user`).then((res) => res.json())
 }
 
-export const getStorxById = () => {
-  return fetch(`http://127.0.0.1:8088/storx?_expand=type&_expand=user/${id}`).then((res) => res.json())
+export const getStorxById = (id) => {
+  return fetch(`http://127.0.0.1:8088/storx/${id}`).then((res) => res.json())
 }
 
 export const updateStorx = (id, updatedData) => {
