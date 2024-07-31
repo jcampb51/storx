@@ -35,7 +35,7 @@ export const EditProfile = ({ currentUser }) => {
           
         };
       
-        updateProfile(currentUser, updatedData).then(updatedProfile => {
+        updateProfile(currentUser.id, updatedData).then(updatedProfile => {
           console.log('Profile updated:', updatedProfile);
         }).catch(error => {
           console.error('Failed to update Profile:', error);
