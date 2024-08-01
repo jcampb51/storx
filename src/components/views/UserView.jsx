@@ -24,7 +24,7 @@ export const UserViews = ({ currentUser }) => {
       <Route path="edit_profile" element={<EditProfile currentUser={currentUser} />} />
     <Route path="storx">
       <Route index element={<StorxTicker currentUser={currentUser}/>} />
-      <Route path=":storxId" element={<StorxDetails />} />{""}
+      <Route path=":id" element={<StorxDetails />} />{""}
     </Route>
     <Route path="respond" element={<ResponseSelector currentUser={currentUser} />} />
     <Route path="create">

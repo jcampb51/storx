@@ -22,6 +22,10 @@ const handleEditClick = (storxThing) => {
   setEditThing(storxThing)
 }
 
+const handleStorxClick = (storxId) => {
+  navigate(`/storx/${storxId}`);
+};
+
 const onDelete = (deletedId) => {
   setAllStorx(prevStorx => prevStorx.filter(storx => storx?.id !== deletedId));
 };
@@ -34,25 +38,27 @@ const onDelete = (deletedId) => {
   }
 }, [editThing, navigate]);
 
-  return (
-    <div className="storx-list">
-      {allStorx.map(storxObj => (
-        <div key={storxObj.id} className="storx-item">
-          <img src={storxObj.image} alt="Storx Image" />
-          <p>Type: {storxObj.type.name}</p>
-          {currentUser.id === storxObj.userId && (
-            <>
-              <button onClick={() =>  handleEditClick(storxObj) }>Edit</button>
-              <DeleteStorx storxObj={storxObj} onDelete={onDelete}/>
-            </>
-          )}
-        </div>
-      ))}
-    </div>
-  );
+return (
+  <div className="storx-list">
+    {allStorx.map(storxObj => (
+      <div key={storxObj.id} className="storx-item">
+        <img src={storxObj.image} alt="Storx Image" onClick={() => handleStorxClick(storxObj.id)} />
+        <p>Type: {storxObj.type.name}</p>
+        {currentUser.id === storxObj.userId && (
+          <>
+            <button onClick={() => handleEditClick(storxObj)}>Edit</button>
+            <DeleteStorx storxObj={storxObj} onDelete={onDelete} />
+          </>
+        )}
+      </div>
+    ))}
+  </div>
+);
 }
 
   
+
+
 
 
 
